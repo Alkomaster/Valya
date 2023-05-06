@@ -1,0 +1,338 @@
+@import "./reset.css"; /* Берем сброс стилей.*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body{
+    background-color: #E5E5E5;
+}
+
+.header-links{
+    position: relative;
+    margin: 0 165px;
+    display: flex;
+}
+
+.logo{
+    margin-left: 13px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.logo-bef{
+    margin: 32px 0 32px 7px;
+    content: "";
+    background-color: #094B72;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 12px;
+    padding-top: 11px;
+    color: white;
+}
+
+.nav{
+    margin-left: 488px;
+    margin-top: 26px;
+    margin-bottom: 27px;
+}
+
+.nav-list{
+    display: flex;
+    padding: 12px 12px;
+    column-gap: 56px;
+}
+
+.nav-search{
+    position: absolute;
+    right: 23px;
+    top: 41px;
+}
+
+.nav-item a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color:#2D2F30;
+    text-transform: uppercase;
+}
+
+/**/
+
+.header-row{
+    display: flex;
+}
+
+.header-content{
+    margin-top: 150px;
+    margin-left: 161px;
+    min-width: 700px;
+}
+
+.header-heading{
+    line-height: 120%;
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2%;
+    color: #094B72;}
+
+.header-description{
+    padding-left: 7px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    color: #4F4F4F;
+    font-size: 24px;
+    margin-top: 46px;
+}
+
+.header-img{
+    max-width: 700px;
+    margin-right: 161px;
+    z-index: 0;
+}
+
+.header-button{
+    margin-left: 4px;
+    margin: 42px 0;
+    padding: 29px 36px;
+    background-color: #094B72;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 8%;
+    line-height: 140,5%;
+    transition: background-color 0.2s ease-in
+}
+
+.header-button:hover, .header-button:focus{
+    background-color: #33475B;
+}
+
+.header-img-container{
+    position: relative;
+    background-color: #6EA8FF1A;
+    border-radius: 100%;
+    width: 667px;
+    height: 667px;
+}
+
+/*.header-img-container::after{
+    content: "";
+    background-color: #6EA8FF1A;
+    width: 630px;
+    height: 630px;
+    border-radius: 100%;
+    z-index: 9;
+}*/
+
+.header-img-container::before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    top: 0px;
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    background-color: #6EA8FF1A;
+    z-index: -1;
+}
+
+.header-sub{
+    position: relative;
+    margin-top: -52px;
+    width: fit-content;
+    margin-left: 70px;
+    background-color: #FFFFFF;
+    z-index: 9;
+    padding: 20px 124px;
+    border-radius: 2%;
+    filter: drop-shadow(0px 39px 100px rgba(25, 62, 108, 0.12));
+    text-align: center;
+}
+
+.header-sub-heading{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #33475B;
+}
+
+.header-sub-description{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #87898C;
+}
+
+/*Jobs*/
+
+.jobs{
+    background-color: #F2F7FF;
+    display: flex;
+    column-gap: 52.69px;
+    padding-right: 165px;
+}
+
+.jobs-desc-wrap{
+    padding-top: 174px;
+    padding-left: 167px;
+    padding-bottom: 310px;
+}
+
+.jobs-heading{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #2D2F30;
+}
+
+.jobs-desc{
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    padding-left: 8px;
+    color: #8B8C8C;
+}
+
+.jobs-cards{
+    display: flex;
+    padding-top: 126px;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 28px;
+    padding-left: 8%;
+    padding-bottom: 132px;
+}
+
+.job-card{
+    width:  300px;
+    height: 300px;
+    background-color: #FCFCFC;
+    border-radius: 8px;
+    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+}
+
+.job-card img{
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.card-heading{
+    padding-top: 18px;
+    padding-left: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #363940;
+}
+
+.card-desc{
+    padding-top: 10px;
+    padding-left: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8B8C8C;
+    line-height: 24px;
+    padding-right: 22px;
+}
+
+/**/
+
+.achevement{
+    background-image: url("./BG.png");
+    text-align: center;
+}
+
+.ac-hd{
+    padding-top: 35px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+.achevemen-heading{
+    color: white;
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 64px;
+}
+
+.achevemen-sub-heading{
+    padding-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+}
+
+.achevement-counts{
+    padding-top: 48px;
+    display: flex;
+    padding-bottom: 55px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.achevement-counts-card{
+    text-align: center;
+}
+
+.achevement-counts-card h1{ 
+    color: white;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+.achevement-counts-card h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/**/
+.female-reviews{
+    padding: 65px 165px 61px 165px;
+    background-color: #F2F7FF;
+    text-align: center;
+}
+
+.rvw-cd-img img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.female-reviews h1{
+    font-size: 48px;
+    font-family: ;
+}
+
+
+/*px - размер по пикселям 16px - дефолт
+% - проценты высчитывается относительно родительского тега дефолт - 16px = 100%
+em - коэффицент также относительно родительского тега
+rem - отношение к корновому тегу, а не к родительскому (:root)
+vh - 1/100 высоты просмотра
+vw - 1/100 ширины просмотра
+vmin - 1/100 наименьших высоты или ширины
+vmax - 1/100 наибольших высоты или ширины
