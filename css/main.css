@@ -311,7 +311,7 @@ body{
 
 /**/
 .female-reviews{
-    padding: 65px 165px 61px 165px;
+    padding: 65px 165px 0px 165px;
     background-color: #F2F7FF;
     text-align: center;
 }
@@ -324,15 +324,175 @@ body{
 
 .female-reviews h1{
     font-size: 48px;
-    font-family: ;
+    font-family: 'Playfair Display', serif;
+    color: #2D2F30;
+    font-weight: 700;
+}
+
+.reviews{
+    margin-top: 51px;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rvw-cd-txt{
+    background-color: white;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 44px;
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    position: relative;
+}
+
+.rvw-cd-txt h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.rvw-cd-txt p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.review-card{
+    max-width: 37.5%;
+}
+
+.rvw-cd-txt::after{
+    content:"";
+    position: absolute;
+    background-image: url("./Vector\ 3.png");
+    top: 100%;
+    left: 50%;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 14.8px solid transparent;
+    border-right: 14.8px solid transparent;
+    border-top: 14.8px solid white; /* Задайте нужный цвет здесь */
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+}
+
+.rvw-cd-img{
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    align-items: flex-start;
 }
 
 
-/*px - размер по пикселям 16px - дефолт
-% - проценты высчитывается относительно родительского тега дефолт - 16px = 100%
-em - коэффицент также относительно родительского тега
-rem - отношение к корновому тегу, а не к родительскому (:root)
-vh - 1/100 высоты просмотра
-vw - 1/100 ширины просмотра
-vmin - 1/100 наименьших высоты или ширины
-vmax - 1/100 наибольших высоты или ширины
+.rvw-cd-img-txt h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #151617;
+    font-size: 18px;
+    padding-top: 2px;
+    line-height: 28px;
+}
+
+.rvw-cd-img-txt h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4F4F4F;
+    text-transform: uppercase;
+}
+
+.male-reviews{
+    padding: 65px 165px 130px 165px;
+    background-color: #F2F7FF;
+    text-align: center;
+}
+
+.male-reviews h1{
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    color: #2D2F30;
+    font-weight: 700;
+}
+
+/**/
+
+.contact{
+    display: flex;
+    padding-left: 159px;
+    padding-top: 37px;
+    padding-right: 92px;
+    padding-bottom: 38px;
+    background-color: #FFFFFF;
+    column-gap: 31px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-heading{
+    color: #2D2F30;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+.contact-img img{
+    max-width: 330px;
+    padding-top: 4px;
+    border-radius: 5%;
+}
+
+.contact-text{
+    padding-top: 14px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #4F4F4F;
+    letter-spacing: 0.5px;
+}
+
+.contact-button{
+    margin-top: 38px;
+    padding: 14px 36px 14px 37px;
+    background-color: #094B72;
+    display: flex;
+    column-gap: 17px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.contact-button p{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.contact-button:hover, .contact-button:focus{
+    background-color: #33475B;
+}
+
+/*.contact-button:hover, .contact-button:focus{
+    margin-top: 38px;
+    padding: 14px 36px 14px 37px;
+    background-color: #094B72;
+    display: flex;
+    column-gap: 17px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    align-items: center;
+    background-color: #33475B;
+}*/
+
